@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#081526">
+  <title>Para Josecito 🏗️</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- PORTADA -->
+  <main class="portada" id="portada">
+    <div class="coordenadas">PROYECTO N.º 001 · 2026</div>
+
+    <p class="etiqueta">INGENIERÍA CIVIL · PROYECTO ESPECIAL</p>
+
+    <div class="grua" aria-hidden="true">🏗️</div>
+
+    <p class="introduccion">SE HA APROBADO</p>
+
+    <h1>
+      Tu próximo<br>
+      gran <span>proyecto...</span>
+    </h1>
+
+    <p class="mensaje">
+      Hoy no solo recibes un casco, Josecito.
+      Hoy comienza una nueva etapa de todo
+      lo que estás por construir.
+    </p>
+
+    <button onclick="abrirCarta()">
+      Abrir proyecto <span>↗</span>
+    </button>
+
+    <p class="firma">Hecho con mucho cariño ♡</p>
+
+    <div class="sello" aria-hidden="true">APROBADO<br>✓</div>
+  </main>
+
+  <!-- PLANO DE FELICITACIÓN -->
+  <main class="carta" id="carta" style="display: none;">
+
+    <div class="plano-encabezado">
+      <span>PLANO DE PROYECTO</span>
+      <span>REF. JC-2026</span>
+    </div>
+
+    <div class="marcas-plano" aria-hidden="true">
+      <span>▲</span>
+      <span>N ↑</span>
+    </div>
+
+    <section class="tarjeta-plano">
+
+      <p class="etiqueta">PROYECTO: UN FUTURO INGENIERO </p>
+
+      <div class="mini-plano" aria-hidden="true">
+        <svg viewBox="0 0 280 110" role="img">
+          <g fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M28 92 H252 M45 92 V30 H92 V92 M92 50 H135 V92"/>
+            <path d="M45 30 L68 12 L92 30 M135 92 V63 H177 V92"/>
+            <path d="M177 63 L201 43 L225 63 V92"/>
+            <path d="M28 100 H252 M35 96 V104 M245 96 V104"/>
+            <path d="M18 20 V92 M14 25 L18 20 L22 25 M14 87 L18 92 L22 87"/>
+            <path d="M45 22 H92 M50 18 V26 M87 18 V26"/>
+            <path d="M145 15 H245 M145 11 V19 M245 11 V19"/>
+            <path d="M145 15 L177 42 L201 22 L245 15" stroke-dasharray="3 4"/>
+          </g>
+          <g fill="currentColor" font-size="7" font-family="Arial, sans-serif">
+            <text x="57" y="15">A-01</text>
+            <text x="111" y="87">B-02</text>
+            <text x="200" y="12">FUTURO</text>
+            <text x="5" y="59" transform="rotate(-90 5 59)">PROGRESO</text>
+          </g>
+        </svg>
+      </div>
+
+      <p class="introduccion">¡CEREMONIA DE CASCOS!</p>
+
+      <h1>
+        ¡Felicitaciones,<br>
+        <span>Josecito!</span>
+      </h1>
+
+      <div class="separador">
+        <span></span>
+        <span>✦</span>
+        <span></span>
+      </div>
+
+      <p class="mensaje">
+        Hoy se celebra todo lo que has logrado,
+        tu esfuerzo. Cada gran obra comienza con una idea, pero se construye
+        con dedicación, paciencia, determinación y valentía.
+      </p>
+
+      <p class="mensaje">
+        Que nunca te falten las ganas de soñar y de construir,
+        metas por alcanzar ni motivos para sentirte orgulloso
+        de todo lo que eres capaz de lograr. Que nunca te falten alegrías en tu vida profesional y personal. 
+        Que tienes a tu familia apoyandote apesar de la presión que ellos mismos te imponen, solo quieren verte triunfar y ser feliz. 
+        Que en el camino siempre encuentres cosas nuevas de las cuales aprender y que nunca olvides que el mejor proyecto eres tú mismo. 
+        Que sean muchas obras que lleves acabo y que cada vez estás más cerca de la meta de obtener ese título como ingenierio, porque ya lo eres. 
+      </p>
+
+      <div class="frase-final">
+        <span class="comilla">“</span>
+        El mejor proyecto de tu vida
+        apenas esta por comenzar y tienes las bases sólidas para seguir construyendo. 
+        Tienes todo el potencial para comerte al mundo, así que deja el miedo y sal a brillar. 
+        Eres increíble Jose Leonardo y algún día te darás cuenta de eso. 
+        De nuevo felicidades por este nuevo paso y por estar más cerca de la meta. Se que tu familia se siente demasiado orgullosa de ti. 
+        Tienes unos papás que te aman y saben que esto te hace feliz.
+        <span class="comilla">”</span>
+      </div>
+
+      <p class="firma">Con mucho cariño ♡</p>
+
+      <div class="firma-tecnica">
+        <span>ESTADO: APROBADO</span>
+        <span>DISEÑADO CON CARIÑO</span>
+      </div>
+
+<!-- MENSAJE SORPRESA -->
+<div class="sorpresa-contenedor">
+  <p class="sorpresa-pista">
+    ANEXO ESPECIAL · SOLO PARA JOSECITO
+  </p>
+
+  <button
+    id="botonSorpresa"
+    class="boton-sorpresa"
+    onclick="mostrarSorpresa()"
+    aria-expanded="false"
+    aria-controls="mensajeSorpresa"
+  >
+    Descubrir mensaje secreto <span>✦</span>
+  </button>
+
+  <div id="mensajeSorpresa" class="mensaje-sorpresa" hidden>
+    <div class="estrella-sorpresa" aria-hidden="true">✦</div>
+
+    <h2>Un último detalle para ti...</h2>
+
+    <p>
+      Josecito, sin importar que tan lejos o cerca tengas a las personas que son realmente importantes para ti, espero que nunca olvides que mereces cosas buenas, que todo esto que estás logrando es por puro mérito tuyo, por las veces que quisiste soltar todo y dejar hasta ahí, por las veces que cruzo por tu mente el querer dejar de estar presente en este mundo, por las veces en las que has sentido que nada tiene sentido, por los momentos de dudas, de tristezas, de estrés y demás, por cada uno de esos momentos que sin ellos no serias la persona que eres hoy en día. así que abrazate, felicitate y créetelo porque el único que aún duda de su potencial eres tú. Es hora de creerselo, de verte en el espejo y decir siempre puedo, porque todo esto es gracias a ti. No dudes de ti.
+    </p>
+
+    <p>
+      Hoy celebramos tus logros, pero también todo lo bonito
+      que todavía está por venir. ¡Este es solo el comienzo de muchos éxitos que vendrán en tu vida!
+    </p>
+
+    <p class="firma-sorpresa">
+      Con cariño, para alguien especial. ♡
+    </p>
+  </div>
+</div>
+
+
+    </section>
+
+    <div class="plano-pie">
+      <span>ESCALA: 1:∞</span>
+      <span>DISEÑO · SUEÑOS · FUTURO</span>
+    </div>
+
+    <button class="boton-regreso" onclick="volverPortada()">
+      <span>↶</span> Volver a la portada
+    </button>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
